@@ -121,14 +121,14 @@ a {
 }
 
 .hero-title {
-  display: block;
-  text-align: center;
+  display: inline-block;
   flex-wrap: wrap;
-  padding-left: 452px;
-  padding-right: 452px;
-  margin-top: 200px;
-  margin-bottom: 350px;
+  text-align: center;
   min-width: 696px;
+  margin-top: 200px;
+  margin-right: 452px;
+  margin-bottom: 0;
+  margin-left: 452;
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -238,12 +238,12 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
-.site-nav {
+.header-site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .link {
+.header-site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -255,12 +255,21 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav .item {
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.header-site-nav .item {
   color: var(--primary-text-color);
   margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.header-site-nav .item:last-child {
   margin-right: 0;
 }
 /*селектор соседа*/
@@ -379,7 +388,7 @@ a {
 .title-text:last-child {
   margin-right: 0;
 }
-.lead {
+.feature-lead {
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -413,6 +422,14 @@ a {
   letter-spacing: 0.03em;
 }
 
+.adress-list {
+  list-style: none;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
 .adress .logo {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
@@ -424,6 +441,10 @@ a {
 }
 .logo-text-white {
   color: var(--hero-text-color);
+}
+
+.adress-link {
+  display: inline;
 }
 
 .link {
